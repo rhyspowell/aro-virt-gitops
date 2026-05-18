@@ -13,7 +13,7 @@ patches:
         value: true
       - op: replace
         path: /spec/template/spec/domain/cpu/cores
-        value: 8  
+        value: 2  
       - op: replace
         path: /spec/template/spec/domain/memory/guest
         value: 2Gi
