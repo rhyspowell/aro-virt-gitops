@@ -7,19 +7,19 @@ spec:
   - clusters: {}
   - list:
       elements:
-      - appName: dev-vm-london2026
+      - appName: dev-vm-aro-demo
         gitPath: dev
-        namespace: dev-vm
-      - appName: prod-vm-lonodon2026
+        namespace: dev-vms
+      - appName: prod-vm-aro-demo
         gitPath: prod
-        namespace: prod-vm
+        namespace: prod-vms
   template:
     metadata:
       name: "{{appName}}"
     spec:
       project: default
       source:
-        repoURL: https://github.com/rh-aelgendy/rosa-virt-gitops.git
+        repoURL: https://github.com/rh-aelgendy/aro-virt-gitops.git
         targetRevision: HEAD
         path: "applicationsets/vm/kustomize/{{gitPath}}"
       destination:
