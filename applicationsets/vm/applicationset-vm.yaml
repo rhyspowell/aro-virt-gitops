@@ -4,7 +4,6 @@ metadata:
   name: vms
 spec:
   generators:
-  - clusters: {}
   - list:
       elements:
       - appName: dev-vm-aro-demo
