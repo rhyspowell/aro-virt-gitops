@@ -18,7 +18,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/rh-aelgendy/aro-virt-gitops.git
+        repoURL: https://github.com/rhyspowell/aro-virt-gitops.git
         targetRevision: HEAD
         path: "applicationsets/vm/kustomize/{{gitPath}}"
       destination:
