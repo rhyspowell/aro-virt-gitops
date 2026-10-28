@@ -24,7 +24,7 @@ patches:
           user: fedora
           password: fedora123
           chpasswd: { expire: False }
-       - op: replace
+      - op: replace
          path: /spec/template/spec/hostname
          value: dev-vm
     target:
