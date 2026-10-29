@@ -15,6 +15,9 @@ patches:
         path: /spec/template/spec/domain/memory/guest
         value: 4Gi
       - op: replace
+        path: /spec/template/spec/hostname
+        value: dev-vm
+      - op: replace
         path: /spec/template/spec/volumes/1/cloudInitNoCloud/userData
         value: |-
           #cloud-config
