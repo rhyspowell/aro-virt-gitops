@@ -16,7 +16,7 @@ patches:
         value: 4Gi
       - op: replace
         path: /spec/template/spec/hostname
-        value: dev-vm
+        value: prod-vm
       - op: replace
         path: /spec/template/spec/volumes/1/cloudInitNoCloud/userData
         value: |-
